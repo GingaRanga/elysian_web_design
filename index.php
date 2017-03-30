@@ -49,20 +49,21 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
         
         <!-- HERO ========================================================================================================================== -->
-        <section id="hero">
+        <section id="hero" data-type="background" data-speed="10">
             <article>
-                <div class="container">
+                <div class="container clearfix">
                     <div class="row">
-                        <div class="col-sm-6 text-wrap">
+                        <div class="col-sm-5">
                             <h1>Elysian Web Design</h1>
                             <p class="lead">Our small town charm will guarantee that your experience is pleasurable from the fruition of your website design to it&#39;s world wide grand reveal!</p>
                             <a href="#"><i class="fa fa-4x fa-circle" aria-hidden="true"></i></a>
@@ -70,20 +71,6 @@
                     </div><!-- /.row -->
                 </div><!-- /.container -->
             </article>
-        </section>
-        
-        <!-- PROPOSAL SECTION ================================================================================================================ -->
-        <section class="proposal">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <p class="lead"><strong>Request for proposal. </strong>Get your ideas online now!</p>
-                    </div><!-- /.col-sm-8 -->
-                    <div class="col-sm-4">
-                        <button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal1">Start request</button>
-                    </div><!-- /.col-sm-4 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
         </section>
         
         <!-- PLACEHOLDER TEXT ================================================================================================================ -->
