@@ -1,0 +1,62 @@
+body{
+    margin-top: 80px;
+}
+img{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.navbar-brand{
+    padding: 5px;
+    margin: 0;
+}
+
+.navbar-brand:hover, 
+.navbar-brand:focus{
+    transform: scale(-10%); // figure this out
+    cursor: pointer;
+}
+
+#hero{
+    background-color: aliceblue;
+    color: #fff;
+    height: 100vh;
+    background-image: url(../img/banner-bg-grad.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fa-circle{
+    color: $brand-accent-2;
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    z-index: 9999;
+}
+
+.fa-circle:hover, 
+.fa-circle:focus{
+    color: lighten($brand-accent-2, 10%);
+    cursor: pointer;
+}
+
+#hero h1{
+    font-family: dolce vita light, 'Raleway', sans-serif;
+}
+
+.text-wrap{
+    position: relative;
+    bottom: -45vh;
+}
+
+.proposal{
+    background-color: #3e4249;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.proposal p{
+    margin: 7px 0 0;
+}
