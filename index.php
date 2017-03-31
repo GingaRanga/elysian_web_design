@@ -11,10 +11,14 @@
         
         <title>Elysian Web Design | Beautiful Creations</title>
         
+        <!-- Modernizr JS - for MFB touchscreen devices -->
+        <script src="js/modernizr.touch.js"></script>
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <!-- Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- FontAwesome CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" /> -->
         <!-- Main CSS including Bootstrap -->
         <link href="css/app.css" rel="stylesheet">
 
@@ -27,7 +31,7 @@
     </head>
     <body>
        
-        <!-- NAVBAR ========================================================================================================================== -->
+        <!-- NAVBAR ========================================================================================================================= -->
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -58,7 +62,7 @@
             </div><!-- /.container-fluid -->
         </nav>
         
-        <!-- HERO ========================================================================================================================== -->
+        <!-- HERO =========================================================================================================================== -->
         <section id="hero" data-type="background" data-speed="10">
             <article>
                 <div class="container clearfix">
@@ -66,21 +70,52 @@
                         <div class="col-sm-5">
                             <h1>Elysian Web Design</h1>
                             <p class="lead">Our small town charm will guarantee that your experience is pleasurable from the fruition of your website design to it&#39;s world wide grand reveal!</p>
-                            <a href="#"><i class="fa fa-4x fa-circle" aria-hidden="true"></i></a>
+                            <!-- <a href="#"><i class="fa fa-4x fa-circle" aria-hidden="true"></i></a> -->
+                            
+                            <ul id="menu" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
+                                <li class="mfb-component__wrap">
+                                    <!-- the main menu button -->
+                                    <a href="#" data-mfb-label="{{the label text of the main button}}" class="mfb-component__button--main">
+                                        <!-- the main button icon visibile by default -->
+                                        <i class="mfb-component__main-icon--resting ion-plus-round"></i>
+                                        <!-- the main button icon visibile when the user is hovering/interacting with the menu -->
+                                        <i class="mfb-component__main-icon--active ion-close-round"></i>
+                                    </a>
+                                    <ul class="mfb-component__list">
+                                    <!-- a child button, repeat as many times as needed -->
+                                        <li>
+                                            <a href="https://github.com/nobitagit/material-floating-button/" data-mfb-label="View on Github" class="mfb-component__button--child">
+                                                <i class="mfb-component__child-icon ion-social-github"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/nobitagit" data-mfb-label="Follow me on Github" class="mfb-component__button--child">
+                                                <i class="mfb-component__child-icon ion-social-octocat"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://twitter.com/share?text=Check this material floating button component!&url=http://nobitagit.github.io/material-floating-button/&hashtags=material,design,button,css" data-mfb-label="Share on Twitter" class="mfb-component__button--child">
+                                                <i class="mfb-component__child-icon ion-social-twitter"></i>
+                                            </a>
+                                        </li>
+                                    </ul><!-- /.mfb-component__list -->
+                                </li><!-- /.mfb-component__wrap -->
+                            </ul><!-- /#menu -->
+                            
                         </div><!-- /#hero-text -->
                     </div><!-- /.row -->
                 </div><!-- /.container -->
             </article>
         </section>
         
-        <!-- PLACEHOLDER TEXT ================================================================================================================ -->
+        <!-- PLACEHOLDER TEXT =============================================================================================================== -->
         <section>
             <div class="container">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, ut commodi doloribus voluptatibus vel consectetur voluptas eos nam corporis ducimus? Beatae architecto laboriosam earum iste deserunt! Temporibus, corporis impedit debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia hic magni, pariatur voluptatem nostrum ipsa nihil sunt expedita voluptate vitae aspernatur, provident sapiente sit ex dolore mollitia. Temporibus, assumenda, tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laudantium repellat commodi quidem dolor illo, voluptates maxime iste facilis aperiam neque magnam vitae animi praesentium voluptas natus, tempora. Dolores, dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor pariatur asperiores fugit eos, sint nulla ipsa quidem voluptate quaerat sequi commodi, sunt optio recusandae neque adipisci illo. Quo laudantium, accusamus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi neque saepe qui quod magnam quo temporibus magni maxime debitis consequuntur recusandae assumenda, cum quisquam doloremque, illum quidem tempore architecto quos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus blanditiis cumque nisi unde delectus dolores, error architecto accusantium cupiditate amet eaque quia quae qui soluta commodi quos reiciendis hic libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla tempora at deserunt enim fuga ipsam eos ex cupiditate numquam earum quod, nihil molestiae omnis repudiandae veritatis laudantium qui aliquid ducimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, maiores error perspiciatis nihil magni impedit sed id quae corrupti molestias nesciunt, officia unde voluptas inventore sapiente est modi eos cupiditate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis ullam dignissimos at quod delectus, incidunt labore iusto tempora reiciendis sint, placeat error a harum aliquid mollitia accusamus maxime laboriosam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam laudantium optio iusto velit tempora cupiditate magni voluptates, nam voluptatem quo eligendi blanditiis libero ex atque aspernatur, consectetur, quasi animi ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eveniet, pariatur similique praesentium quas, id quam ut asperiores inventore in natus, ullam voluptas sit excepturi tenetur qui rerum recusandae veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias officia, magni at dicta obcaecati, ducimus dolorem aliquam libero natus odio veniam ut atque soluta recusandae? Accusantium nisi eaque ipsa rem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ut hic in ipsa aliquam accusantium id magni eligendi, dignissimos reiciendis quis consequatur at similique, distinctio nobis harum veritatis perferendis autem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, ut commodi doloribus voluptatibus vel consectetur voluptas eos nam corporis ducimus? Beatae architecto laboriosam earum iste deserunt! Temporibus, corporis impedit debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia hic magni, pariatur voluptatem nostrum ipsa nihil sunt expedita voluptate vitae aspernatur, provident sapiente sit ex dolore mollitia. Temporibus, assumenda, tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laudantium repellat commodi quidem dolor illo, voluptates maxime iste facilis aperiam neque magnam vitae animi praesentium voluptas natus, tempora. Dolores, dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor pariatur asperiores fugit eos, sint nulla ipsa quidem voluptate quaerat sequi commodi, sunt optio recusandae neque adipisci illo. Quo laudantium, accusamus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi neque saepe qui quod magnam quo temporibus magni maxime debitis consequuntur recusandae assumenda, cum quisquam doloremque, illum quidem tempore architecto quos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus blanditiis cumque nisi unde delectus dolores, error architecto accusantium cupiditate amet eaque quia quae qui soluta commodi quos reiciendis hic libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla tempora at deserunt enim fuga ipsam eos ex cupiditate numquam earum quod, nihil molestiae omnis repudiandae veritatis laudantium qui aliquid ducimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, maiores error perspiciatis nihil magni impedit sed id quae corrupti molestias nesciunt, officia unde voluptas inventore sapiente est modi eos cupiditate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis ullam dignissimos at quod delectus, incidunt labore iusto tempora reiciendis sint, placeat error a harum aliquid mollitia accusamus maxime laboriosam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam laudantium optio iusto velit tempora cupiditate magni voluptates, nam voluptatem quo eligendi blanditiis libero ex atque aspernatur, consectetur, quasi animi ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eveniet, pariatur similique praesentium quas, id quam ut asperiores inventore in natus, ullam voluptas sit excepturi tenetur qui rerum recusandae veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias officia, magni at dicta obcaecati, ducimus dolorem aliquam libero natus odio veniam ut atque soluta recusandae? Accusantium nisi eaque ipsa rem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ut hic in ipsa aliquam accusantium id magni eligendi, dignissimos reiciendis quis consequatur at similique, distinctio nobis harum veritatis perferendis autem!</p>
             </div>
         </section>
         
-        <!-- PROPOSAL MODAL ================================================================================================================== -->
+        <!-- PROPOSAL MODAL ================================================================================================================= -->
         <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -117,11 +152,13 @@
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
-        <!-- PAGE SCRIPTS ==================================================================================================================== -->
+        <!-- PAGE SCRIPTS =================================================================================================================== -->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+        <!-- Material FAB JS -->
+        <script src="js/mfb.min.js"></script>
         <!-- Custom JS -->
         <script src="js/app.js"></script>
         
