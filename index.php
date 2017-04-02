@@ -9,14 +9,14 @@
         <meta name="author" content="">
         <link rel="icon" href="">
         
-        <title>Elysian Web Design | Beautiful Creations</title>
+        <title>Elysian Web Design &#124; Beautiful Creations</title>
         
         <!-- Modernizr JS - for MFB touchscreen devices -->
         <script src="js/modernizr.touch.js"></script>
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <!-- Google Icon Font-->
-        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- FontAwesome CSS -->
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" /> -->
         <!-- Main CSS including Bootstrap -->
@@ -29,9 +29,15 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body>
+    <body id="page-top">
+      
+        <!-- Figure out how to do banner above nav which disappears on scroll
+        <header>
+            <div class="container-fluid">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam eos placeat nemo explicabo et velit iusto, dolores debitis eum laboriosam rem nostrum itaque inventore optio, natus deleniti illum repellendus architecto!</div>
+        </header>
+        -->
        
-        <!-- NAVBAR ========================================================================================================================= -->
+        <!-- NAV ============================================================================================================================ -->
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -53,8 +59,8 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Work</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#work">Current Work</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
@@ -62,57 +68,88 @@
             </div><!-- /.container-fluid -->
         </nav>
         
-        <!-- HERO =========================================================================================================================== -->
-        <section id="hero" data-type="background" data-speed="10">
-            <article>
-                <div class="container clearfix">
+        <!-- HERO SECTION =================================================================================================================== -->
+        <section id="hero">
+            <div class="wrap">
+                <div class="container">
                     <div class="row">
                         <div class="col-sm-5">
                             <h1>Elysian Web Design</h1>
-                            <p class="lead">Our small town charm will guarantee that your experience is pleasurable from the fruition of your website design to it&#39;s world wide grand reveal!</p>
+                            <p class="lead">Our small town charm will guarantee that your experience is pleasurable from the fruition of your website design to it&#39;s world wide grand reveal&#33;&#46;</p>
                             <!-- <a href="#"><i class="fa fa-4x fa-circle" aria-hidden="true"></i></a> -->
-                            
+
                             <ul id="menu" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
                                 <li class="mfb-component__wrap">
                                     <!-- the main menu button -->
-                                    <a href="#" data-mfb-label="{{the label text of the main button}}" class="mfb-component__button--main">
+                                    <a data-mfb-label="Let's get in touch&#33;" class="mfb-component__button--main">
                                         <!-- the main button icon visibile by default -->
-                                        <i class="mfb-component__main-icon--resting ion-plus-round"></i>
+                                        <i class="mfb-component__main-icon--resting material-icons">add</i>
                                         <!-- the main button icon visibile when the user is hovering/interacting with the menu -->
-                                        <i class="mfb-component__main-icon--active ion-close-round"></i>
+                                        <i class="mfb-component__main-icon--active material-icons">clear</i>
                                     </a>
                                     <ul class="mfb-component__list">
                                     <!-- a child button, repeat as many times as needed -->
                                         <li>
-                                            <a href="https://github.com/nobitagit/material-floating-button/" data-mfb-label="View on Github" class="mfb-component__button--child">
-                                                <i class="mfb-component__child-icon ion-social-github"></i>
+                                            <a href="#" type="button" data-toggle="modal" data-target="#myModal1" data-mfb-label="Request a proposal" class="mfb-component__button--child">
+                                                <i class="mfb-component__child-icon material-icons">assignment</i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="https://github.com/nobitagit" data-mfb-label="Follow me on Github" class="mfb-component__button--child">
-                                                <i class="mfb-component__child-icon ion-social-octocat"></i>
+                                            <a href="mailto:webdesignelysian@gmail.com?Subject=&#91;%20Company%20Name%20&#93;%20Has%20a%20message%20for%20Elysian%20Web%20Design&#33;&body=Please%20enter%20company%20name%20in%20email%20subject%20as%20well%20as%20your%20contact%20details%20and%20we%20will%20get%20back%20to%20you%20as%20soon%20as%20we%20can%20&#58;&#41;" target="_top" data-mfb-label="Send us an email" class="mfb-component__button--child">
+                                                <i class="mfb-component__child-icon material-icons">email</i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="http://twitter.com/share?text=Check this material floating button component!&url=http://nobitagit.github.io/material-floating-button/&hashtags=material,design,button,css" data-mfb-label="Share on Twitter" class="mfb-component__button--child">
-                                                <i class="mfb-component__child-icon ion-social-twitter"></i>
+                                            <a href="#page-top" data-mfb-label="Back to top of page" class="mfb-component__button--child">
+                                                <i class="mfb-component__child-icon material-icons">keyboard_arrow_up</i>
                                             </a>
                                         </li>
                                     </ul><!-- /.mfb-component__list -->
                                 </li><!-- /.mfb-component__wrap -->
                             </ul><!-- /#menu -->
-                            
+
                         </div><!-- /#hero-text -->
                     </div><!-- /.row -->
                 </div><!-- /.container -->
-            </article>
+            </div><!-- /.wrap -->
         </section>
         
-        <!-- PLACEHOLDER TEXT =============================================================================================================== -->
-        <section>
-            <div class="container">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, ut commodi doloribus voluptatibus vel consectetur voluptas eos nam corporis ducimus? Beatae architecto laboriosam earum iste deserunt! Temporibus, corporis impedit debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia hic magni, pariatur voluptatem nostrum ipsa nihil sunt expedita voluptate vitae aspernatur, provident sapiente sit ex dolore mollitia. Temporibus, assumenda, tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laudantium repellat commodi quidem dolor illo, voluptates maxime iste facilis aperiam neque magnam vitae animi praesentium voluptas natus, tempora. Dolores, dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor pariatur asperiores fugit eos, sint nulla ipsa quidem voluptate quaerat sequi commodi, sunt optio recusandae neque adipisci illo. Quo laudantium, accusamus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi neque saepe qui quod magnam quo temporibus magni maxime debitis consequuntur recusandae assumenda, cum quisquam doloremque, illum quidem tempore architecto quos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus blanditiis cumque nisi unde delectus dolores, error architecto accusantium cupiditate amet eaque quia quae qui soluta commodi quos reiciendis hic libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla tempora at deserunt enim fuga ipsam eos ex cupiditate numquam earum quod, nihil molestiae omnis repudiandae veritatis laudantium qui aliquid ducimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, maiores error perspiciatis nihil magni impedit sed id quae corrupti molestias nesciunt, officia unde voluptas inventore sapiente est modi eos cupiditate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis ullam dignissimos at quod delectus, incidunt labore iusto tempora reiciendis sint, placeat error a harum aliquid mollitia accusamus maxime laboriosam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam laudantium optio iusto velit tempora cupiditate magni voluptates, nam voluptatem quo eligendi blanditiis libero ex atque aspernatur, consectetur, quasi animi ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eveniet, pariatur similique praesentium quas, id quam ut asperiores inventore in natus, ullam voluptas sit excepturi tenetur qui rerum recusandae veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias officia, magni at dicta obcaecati, ducimus dolorem aliquam libero natus odio veniam ut atque soluta recusandae? Accusantium nisi eaque ipsa rem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ut hic in ipsa aliquam accusantium id magni eligendi, dignissimos reiciendis quis consequatur at similique, distinctio nobis harum veritatis perferendis autem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, ut commodi doloribus voluptatibus vel consectetur voluptas eos nam corporis ducimus? Beatae architecto laboriosam earum iste deserunt! Temporibus, corporis impedit debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia hic magni, pariatur voluptatem nostrum ipsa nihil sunt expedita voluptate vitae aspernatur, provident sapiente sit ex dolore mollitia. Temporibus, assumenda, tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laudantium repellat commodi quidem dolor illo, voluptates maxime iste facilis aperiam neque magnam vitae animi praesentium voluptas natus, tempora. Dolores, dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor pariatur asperiores fugit eos, sint nulla ipsa quidem voluptate quaerat sequi commodi, sunt optio recusandae neque adipisci illo. Quo laudantium, accusamus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi neque saepe qui quod magnam quo temporibus magni maxime debitis consequuntur recusandae assumenda, cum quisquam doloremque, illum quidem tempore architecto quos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus blanditiis cumque nisi unde delectus dolores, error architecto accusantium cupiditate amet eaque quia quae qui soluta commodi quos reiciendis hic libero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla tempora at deserunt enim fuga ipsam eos ex cupiditate numquam earum quod, nihil molestiae omnis repudiandae veritatis laudantium qui aliquid ducimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, maiores error perspiciatis nihil magni impedit sed id quae corrupti molestias nesciunt, officia unde voluptas inventore sapiente est modi eos cupiditate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis ullam dignissimos at quod delectus, incidunt labore iusto tempora reiciendis sint, placeat error a harum aliquid mollitia accusamus maxime laboriosam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam laudantium optio iusto velit tempora cupiditate magni voluptates, nam voluptatem quo eligendi blanditiis libero ex atque aspernatur, consectetur, quasi animi ipsa? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eveniet, pariatur similique praesentium quas, id quam ut asperiores inventore in natus, ullam voluptas sit excepturi tenetur qui rerum recusandae veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias officia, magni at dicta obcaecati, ducimus dolorem aliquam libero natus odio veniam ut atque soluta recusandae? Accusantium nisi eaque ipsa rem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ut hic in ipsa aliquam accusantium id magni eligendi, dignissimos reiciendis quis consequatur at similique, distinctio nobis harum veritatis perferendis autem!</p>
+        <!-- SERVICES SECTION =============================================================================================================== -->
+        <section id="services">
+            <div class="wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                            <i style="color:black;" class="material-icons" id="material-carousel">phonelink</i>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <i style="color:black;" class="material-icons" id="material-carousel">cached</i>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <i style="color:black;" class="material-icons" id="material-carousel">search</i>
+                        </div>            
+                    </div>
+                </div>
             </div>
+        </section>
+        
+        <!-- OUR WORK SECTION =============================================================================================================== -->
+        <section id="work">
+            <div class="container-fluid">
+                <div class="text-wrap">
+                    <h1>Current Work</h1>
+                    <p>Sleek and modern design with a business work&#45;horse under the hood&#46;</p>
+                </div><!-- /.text-wrap -->
+                <div class="row">
+                    <div class="col-md-7">
+                        <img src="img/responsive-blog.png" alt="blog site on different screens" max-width="100%">
+                    </div><!-- /.col-md-7 -->
+                    <div class="col-md-5" id="desc">
+                        <h2>Google AMP Blog Website</h2> 
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi.</p>
+                    </div><!-- /.col-md-5 -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
         </section>
         
         <!-- PROPOSAL MODAL ================================================================================================================= -->

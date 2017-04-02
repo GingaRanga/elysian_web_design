@@ -66,6 +66,9 @@
  * Consider overriding them in your own style sheets rather than editing them
  * here. Refer to the docs for more info.
  */
+/***********************
+    My Custom Mixins
+***********************/
 /* COLORS ----------------------------*/
 /* EFFECTS ---------------------------*/
 /* SPEEDS ----------------------------*/
@@ -124,12 +127,16 @@
     #BUTTONS | Base
 \*------------------------------------*/
 .mfb-component__button, .mfb-component__button--main, .mfb-component__button--child {
-  background-color: #ff533d;
+  background-color: #ff7361;
   display: inline-block;
   position: relative;
   border: none;
   border-radius: 50%;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 0 5px 7px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   cursor: pointer;
   outline: none;
   padding: 0;
@@ -137,6 +144,13 @@
   -webkit-user-drag: none;
   font-weight: bold;
   color: #f1f1f1; }
+  .mfb-component__button:hover, .mfb-component__button--main:hover, .mfb-component__button--child:hover, .mfb-component__button:focus, .mfb-component__button--main:focus, .mfb-component__button--child:focus {
+    background-color: #ff533d;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
 
 /**
  * This is the unordered list for the list items that contain
@@ -584,14 +598,14 @@
   content: attr(data-mfb-label);
   opacity: 0;
   transition: all 0.5s;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(15, 22, 38, 0.8);
   padding: 4px 10px;
   border-radius: 3px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 13px;
+  font-size: 1.3em;
   pointer-events: none;
   position: absolute;
-  top: 50%;
+  top: 40%;
   margin-top: -10.5px;
   transition: all 0.5s; }
 
@@ -2289,10 +2303,10 @@ output {
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
   .form-control:focus {
-    border-color: #ff533d;
+    border-color: #ab987a;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 83, 61, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 83, 61, 0.6); }
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(171, 152, 122, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(171, 152, 122, 0.6); }
   .form-control::-moz-placeholder {
     color: #999;
     opacity: 1; }
@@ -2774,31 +2788,31 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #0f1626;
-  border-color: #080b14; }
+  background-color: #ab987a;
+  border-color: #a18c6a; }
   .btn-primary:focus, .btn-primary.focus {
     color: #fff;
-    background-color: #010101;
-    border-color: black; }
+    background-color: #947f5e;
+    border-color: #564a36; }
   .btn-primary:hover {
     color: #fff;
-    background-color: #010101;
-    border-color: black; }
+    background-color: #947f5e;
+    border-color: #7e6c50; }
   .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #010101;
-    border-color: black; }
+    background-color: #947f5e;
+    border-color: #7e6c50; }
     .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus {
       color: #fff;
-      background-color: black;
-      border-color: black; }
+      background-color: #7e6c50;
+      border-color: #564a36; }
   .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     background-image: none; }
   .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus {
-    background-color: #0f1626;
-    border-color: #080b14; }
+    background-color: #ab987a;
+    border-color: #a18c6a; }
   .btn-primary .badge {
-    color: #0f1626;
+    color: #ab987a;
     background-color: #fff; }
 
 .btn-success {
@@ -5313,17 +5327,17 @@ button.close {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   background-color: transparent; }
   .carousel-control.left {
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); }
   .carousel-control.right {
     left: auto;
     right: 0;
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background-image: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+    background-image: -o-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+    background-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); }
   .carousel-control:hover, .carousel-control:focus {
@@ -5332,6 +5346,8 @@ button.close {
     text-decoration: none;
     opacity: 0.9;
     filter: alpha(opacity=90); }
+  .carousel-control .next,
+  .carousel-control .prev,
   .carousel-control .icon-prev,
   .carousel-control .icon-next,
   .carousel-control .glyphicon-chevron-left,
@@ -5341,10 +5357,12 @@ button.close {
     margin-top: -10px;
     z-index: 5;
     display: inline-block; }
+  .carousel-control .next,
   .carousel-control .icon-prev,
   .carousel-control .glyphicon-chevron-left {
     left: 50%;
     margin-left: -10px; }
+  .carousel-control .prev,
   .carousel-control .icon-next,
   .carousel-control .glyphicon-chevron-right {
     right: 50%;
@@ -5646,24 +5664,36 @@ button.close {
 /********************
     Custom Mixins
 ********************/
+/********************
+    Global Styles
+********************/
 body {
-  margin-top: 80px; }
+  margin-top: 80px;
+  background-color: #f5f5f5;
+  color: #0f1626; }
 
 img {
   max-width: 100%;
   overflow: hidden; }
 
+h1,
+h2 {
+  font-family: dolce vita light, 'Raleway', sans-serif; }
+
+/*****************
+    Nav Styles
+*****************/
 .navbar {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
 
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a {
   line-height: 15px; }
-
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  background-color: rgba(15, 22, 38, 0.2);
-  border-bottom: 5px solid #ab987a; }
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    background-color: rgba(15, 22, 38, 0.2);
+    border-bottom: 5px solid #ab987a; }
 
 .navbar-brand {
   padding: 5px;
@@ -5671,19 +5701,20 @@ img {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s; }
+  .navbar-brand:hover, .navbar-brand:focus {
+    cursor: pointer;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
 
-.navbar-brand:hover,
-.navbar-brand:focus {
-  cursor: pointer;
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  transform: scale(0.8);
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
-
+/******************
+    Hero Styles
+******************/
 #hero {
   background-color: #0f1626;
   background-image: url(../img/banner-bg-grad.jpg);
@@ -5695,42 +5726,68 @@ img {
   position: relative;
   display: table;
   width: 100%;
-  color: #fff; }
+  color: #f5f5f5; }
 
-#hero article {
+#hero .wrap {
   width: 100%;
   display: table-cell;
   vertical-align: bottom; }
 
-#hero h1 {
-  font-family: dolce vita light, 'Raleway', sans-serif; }
+/*
+.fa-circle{
+    color: lighten($brand-accent-2, 7%);
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    z-index: 9999;
+    @include text-shadow(0 5px 7px rgba(0, 0, 0, 0.4));
+    @include transition(all 0.5s);
+        &:hover,
+        &:focus{
+            color: $brand-accent-2;
+            cursor: pointer;
+            @include text-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
+            @include transition(all 0.5s);
+        }
+}
+*/
+/*****************
+    FAB Styles
+*****************/
+.material-icons {
+  font-size: 3em;
+  color: #f5f5f5; }
 
-.fa-circle {
-  color: #ff7361;
-  position: fixed;
-  right: 2%;
-  bottom: 5%;
-  z-index: 9999;
-  -webkit-text-shadow: 0 5px 7px rgba(0, 0, 0, 0.4);
-  -moz-text-shadow: 0 5px 7px rgba(0, 0, 0, 0.4);
-  -ms-text-shadow: 0 5px 7px rgba(0, 0, 0, 0.4);
-  -o-text-shadow: 0 5px 7px rgba(0, 0, 0, 0.4);
-  text-shadow: 0 5px 7px rgba(0, 0, 0, 0.4);
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
+/**********************
+    Services Styles
+**********************/
+#services {
+  min-height: 70vh;
+  color: #0f1626;
+  text-align: center;
+  position: relative;
+  display: table;
+  width: 100%; }
 
-.fa-circle:hover,
-.fa-circle:focus {
-  color: #ff533d;
-  cursor: pointer;
-  -webkit-text-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  -moz-text-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  -ms-text-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  -o-text-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
+#services .wrap {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle; }
+
+/******************
+    Work Styles
+******************/
+#work {
+  background-color: #0f1626;
+  background-image: url(../img/work-bg.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 89vh;
+  color: #f5f5f5; }
+
+.text-wrap {
+  padding: 60px 0 40px;
+  text-align: center; }
 
 /*# sourceMappingURL=app.css.map */

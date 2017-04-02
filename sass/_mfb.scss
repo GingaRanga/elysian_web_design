@@ -65,10 +65,33 @@
  * here. Refer to the docs for more info.
  */
 
+/***********************
+    My Custom Mixins
+***********************/
+
+@mixin text-shadow($shadow) {
+    -webkit-text-shadow: $shadow;
+    -moz-text-shadow: $shadow;
+    -ms-text-shadow: $shadow;
+    -o-text-shadow: $shadow;
+    text-shadow: $shadow;
+}
+
+@mixin box-shadow($bShadow) {
+    -webkit-box-shadow: $bShadow;
+    box-shadow: $bShadow;
+}
+
+@mixin transition($trans) {
+    -webkit-transition: $trans;
+    -o-transition: $trans;
+    transition: $trans;
+}
+
 /* COLORS ----------------------------*/
 
 // the main/primary color
-$main-color: $brand-accent-2 !default;
+$main-color: lighten($brand-accent-2, 7%); // I set this style
 // aka the white text
 $bright-text: rgba(255, 255, 255, 0.8) !default;
 
@@ -190,7 +213,9 @@ $number-of-child-buttons: 4 !default;
   position: relative;
   border: none;
   border-radius: 50%;
-  box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+  //box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+  @include box-shadow(0 5px 7px rgba(0, 0, 0, 0.4));
+  @include transition(all 0.5s);
   cursor: pointer;
   outline: none;
   padding: 0;
@@ -198,6 +223,12 @@ $number-of-child-buttons: 4 !default;
   -webkit-user-drag: none;
   font-weight: bold;
   color: #f1f1f1;
+    &:hover,
+    &:focus{
+        background-color: $brand-accent-2;
+        @include box-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
+        @include transition(all 0.5s);
+    }
 }
 
 /**
@@ -334,14 +365,17 @@ $number-of-child-buttons: 4 !default;
   content: attr(data-mfb-label);
   opacity: 0;
   transition: all $label-hover-off;
-  background: rgba(0,0,0, .4);
+  background: rgba(15, 22, 38, 0.8);
+  //background: rgba(0,0,0, .4);
   padding: $labels-padding-vertical $labels-padding-horizontal;
   border-radius: 3px;
   color: $bright-text;
-  font-size: $labels-font-size;
+  //font-size: $labels-font-size;
+  font-size: 1.3em;
   pointer-events: none;
   position: absolute;
-  top: 50%;
+  //top: 50%;
+  top: 40%;
   margin-top: - ($labels-padding-vertical + $labels-font-size / 2);
   transition: all $label-hover-off; // the label disappears at this speed
 }

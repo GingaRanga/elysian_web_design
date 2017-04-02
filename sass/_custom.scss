@@ -2,12 +2,17 @@
     Custom Mixins
 ********************/
 
-@mixin button-anim($shadow) {
+@mixin text-shadow($shadow) {
     -webkit-text-shadow: $shadow;
     -moz-text-shadow: $shadow;
     -ms-text-shadow: $shadow;
     -o-text-shadow: $shadow;
     text-shadow: $shadow;
+}
+
+@mixin box-shadow($bShadow) {
+    -webkit-box-shadow: $bShadow;
+    box-shadow: $bShadow;
 }
 
 @mixin transition($trans) {
@@ -16,7 +21,7 @@
     transition: $trans;
 }
 
-@mixin scale-anim($scale) {
+@mixin scale($scale) {
     -webkit-transform: scale($scale);
     -moz-transform: scale($scale);
     -ms-transform: scale($scale);
@@ -24,13 +29,28 @@
     transform: scale($scale);
 }
 
+/********************
+    Global Styles
+********************/
+
 body{
     margin-top: 80px;
+    background-color: $brand-secondary;
+    color: $brand-primary;
 }
 img{
     max-width: 100%;
     overflow: hidden;
 }
+
+h1,
+h2{
+    font-family: dolce vita light, 'Raleway', sans-serif;
+}
+
+/*****************
+    Nav Styles
+*****************/
 
 .navbar{
     box-shadow: 0 2px 5px rgba(0,0,0,.26);
@@ -39,26 +59,28 @@ img{
 .navbar-default .navbar-nav > li > a, 
 .navbar-default .navbar-nav > li > a {
     line-height: 15px; // this is to keep navbar from increasing height on hover due to border-bottom
-}
-
-.navbar-default .navbar-nav > li > a:hover, 
-.navbar-default .navbar-nav > li > a:focus {
-    background-color: $brand-trans;
-    border-bottom: 5px solid $brand-accent-1;
+        &:hover,
+        &:focus{
+            background-color: $brand-trans;
+            border-bottom: 5px solid $brand-accent-1;
+        }
 }
 
 .navbar-brand{
     padding: 5px;
     margin: 0;
     @include transition(all 0.5s);
+        &:hover,
+        &:focus{
+            cursor: pointer;
+            @include scale(0.8);
+            @include transition(all 0.5s);
+        }
 }
 
-.navbar-brand:hover, 
-.navbar-brand:focus{
-    cursor: pointer;
-    @include scale-anim(0.8);
-    @include transition(all 0.5s);
-}
+/******************
+    Hero Styles
+******************/
 
 #hero{
     background-color: $brand-primary;
@@ -71,33 +93,77 @@ img{
     position: relative;
     display: table;
     width: 100%;
-    color: #fff;
+    color: $brand-secondary;
 }
 
-#hero article{
+#hero .wrap{
     width: 100%;
     display: table-cell;
     vertical-align: bottom;
 }
 
-#hero h1{
-    font-family: dolce vita light, 'Raleway', sans-serif;
-}
-
+/*
 .fa-circle{
     color: lighten($brand-accent-2, 7%);
     position: fixed;
     right: 2%;
     bottom: 5%;
     z-index: 9999;
-    @include button-anim(0 5px 7px rgba(0, 0, 0, 0.4));
+    @include text-shadow(0 5px 7px rgba(0, 0, 0, 0.4));
     @include transition(all 0.5s);
+        &:hover,
+        &:focus{
+            color: $brand-accent-2;
+            cursor: pointer;
+            @include text-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
+            @include transition(all 0.5s);
+        }
+}
+*/
+
+/*****************
+    FAB Styles
+*****************/
+
+.material-icons{
+    font-size: 3em;
+    color: $brand-secondary;
 }
 
-.fa-circle:hover, 
-.fa-circle:focus{
-    color: $brand-accent-2;
-    cursor: pointer;
-    @include button-anim(0 10px 20px rgba(0, 0, 0, 0.4));
-    @include transition(all 0.5s);
+/**********************
+    Services Styles
+**********************/
+
+#services{
+    min-height: 70vh;
+    color: $brand-primary;
+    text-align: center;
+    position: relative;
+    display: table;
+    width: 100%;
+}
+
+#services .wrap{
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/******************
+    Work Styles
+******************/
+
+#work{
+    background-color: $brand-primary;
+    background-image: url(../img/work-bg.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 89vh;
+    color: $brand-secondary;
+}
+
+.text-wrap{
+    padding: 60px 0 40px;
+    text-align: center;
 }
