@@ -5783,11 +5783,46 @@ h2 {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 89vh;
   color: #f5f5f5; }
+
+#work .container-fluid {
+  padding-left: 0; }
+
+.description {
+  position: relative;
+  top: 20vh; }
 
 .text-wrap {
   padding: 60px 0 40px;
   text-align: center; }
+
+#work2 {
+  background-color: #0f1626;
+  background-image: url(../img/woodwork-bg.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #0f1626; }
+
+#work2 .container-fluid {
+  padding-right: 0; }
+
+#work3 {
+  padding: 60px 0 0;
+  background-color: #0f1626;
+  background-image: url(../img/lumberjack-bg.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f5f5f5; }
+
+#work3 .container-fluid {
+  padding-left: 0; }
+
+@media (max-width: 768px) {
+  .description {
+    position: static;
+    padding: 0;
+    margin: 0; } }
 
 /*# sourceMappingURL=app.css.map */

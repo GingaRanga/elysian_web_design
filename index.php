@@ -134,23 +134,97 @@
         </section>
         
         <!-- OUR WORK SECTION =============================================================================================================== -->
-        <section id="work">
-            <div class="container-fluid">
-                <div class="text-wrap">
-                    <h1>Current Work</h1>
-                    <p>Sleek and modern design with a business work&#45;horse under the hood&#46;</p>
-                </div><!-- /.text-wrap -->
-                <div class="row">
-                    <div class="col-md-7">
-                        <img src="img/responsive-blog.png" alt="blog site on different screens" max-width="100%">
-                    </div><!-- /.col-md-7 -->
-                    <div class="col-md-5" id="desc">
-                        <h2>Google AMP Blog Website</h2> 
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi.</p>
-                    </div><!-- /.col-md-5 -->
-                </div><!-- /.row -->
-            </div><!-- /.container-fluid -->
-        </section>
+        <section class="tablet hidden-xs">
+            <article id="work">
+                <div class="container-fluid">
+                    <div class="text-wrap">
+                        <h1>Current Work</h1>
+                        <p>Sleek and modern design with a business work&#45;horse under the hood&#46;</p>
+                    </div><!-- /.text-wrap -->
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <img src="img/responsive-blog.png" alt="blog site on different screens">
+                        </div><!-- /.col-md-7 -->
+                        <div class="col-sm-5 description">
+                            <h2>Google AMP Blog Website</h2> 
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi.</p>
+                        </div><!-- /.col-md-5 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </article>
+            <article id="work2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-5 description">
+                            <h2>Single Page Gun Club Website</h2> 
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi.</p>
+                        </div><!-- /.col-md-5 -->
+                        <div class="col-sm-7">
+                            <img src="img/responsive-gunclub.png" alt="gun club site on different screens">
+                        </div><!-- /.col-md-7 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </article>
+            <article id="work3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <img src="img/responsive-wedding.png" alt="wedding site on different screens">
+                        </div><!-- /.col-md-7 -->
+                        <div class="col-sm-5 description">
+                            <h2>Dynamic Wedding Website</h2> 
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi.</p>
+                        </div><!-- /.col-md-5 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </article>
+        </section><!-- /.tablet -->
+        
+        <section class="mobile visible-xs">
+            <article id="mobile-work">
+                <div class="container">
+                    <div class="text-wrap">
+                        <h1>Current Work</h1>
+                        <p>Sleek and modern design with a business work&#45;horse under the hood&#46;</p>
+                    </div><!-- /.text-wrap -->
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <img src="img/responsive-blog.png" alt="blog site on different screens">
+                        </div><!-- /.col-md-7 -->
+                        <div class="col-xs-12">
+                            <h2>Google AMP Blog Website</h2> 
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi.</p>
+                        </div><!-- /.col-md-5 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </article>
+            <article id="mobile-work-1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2>Single Page Gun Club Website</h2> 
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi.</p>
+                        </div><!-- /.col-md-5 -->
+                        <div class="col-xs-12">
+                            <img src="img/responsive-gunclub.png" alt="gun club site on different screens">
+                        </div><!-- /.col-md-7 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </article>
+            <article id="mobile-work-2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <img src="img/responsive-wedding.png" alt="wedding site on different screens">
+                        </div><!-- /.col-md-7 -->
+                        <div class="col-xs-12">
+                            <h2>Dynamic Wedding Website</h2> 
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem itaque nam velit culpa provident, harum voluptatem delectus nihil maxime suscipit eius sed deserunt nemo quos officiis dicta ut libero commodi.</p>
+                        </div><!-- /.col-md-5 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </article>
+        </section><!-- /.tablet -->
         
         <!-- PROPOSAL MODAL ================================================================================================================= -->
         <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
