@@ -92,12 +92,11 @@ article{
 .fa-search-plus, 
 .fa-bar-chart, 
 .fa-wordpress, 
-.fa-facebook,
+.fa-facebook-official,
 .fa-code,
-.fa-comments,
-.fa-twitter,
-.fa-linkedin{
+.fa-comments,{
     color: $brand-accent-2;
+    display: block;
 }
 
 .social-link{
@@ -160,6 +159,9 @@ span.uppercase{
             display: table-cell;
             vertical-align: bottom;
         }
+        @media (max-width: 768px){
+            background-image: url(../img/banner-bg-mobile.jpg);
+        }
 }
 
 /*****************
@@ -194,7 +196,7 @@ span.uppercase{
 
 #work-mobile{
     background-color: $brand-primary;
-    background-image: url(../img/work-bg.jpg);
+    background-image: url(../img/work-bg-mobile.jpg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -212,7 +214,7 @@ span.uppercase{
 
 #work2-mobile{
     background-color: $brand-secondary;
-    background-image: url(../img/woodwork-bg.jpg);
+    background-image: url(../img/woodwork-bg-mobile.jpg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -226,14 +228,11 @@ span.uppercase{
                     text-decoration: none;
                 }
         }
-        h2{
-            color: $brand-primary;
-        }
 }
 
 #work3-mobile{
     background-color: $brand-primary;
-    background-image: url(../img/lumberjack-bg.jpg);
+    background-image: url(../img/lumberjack-bg-mobile.jpg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -342,10 +341,76 @@ footer{
     color: $brand-secondary;
 }
 
+.btn-facebook, .btn-linkedin, .btn-twitter, .btn-email{
+    color: $brand-secondary;
+    background-color: $brand-primary;
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 22px;
+    @include transition(all 0.5s);
+        &:hover,
+        &:focus{
+            cursor: pointer;
+        }
+}
+
+.btn-facebook{
+    &:hover,
+    &:focus{
+        @include transition(all 0.5s);
+        background-color: #3b5998;
+        color: $brand-secondary;
+    }
+}
+
+.btn-linkedin{
+    &:hover,
+    &:focus{
+        @include transition(all 0.5s);
+        background-color: #007bb5;
+        color: $brand-secondary;
+    }
+}
+
+.btn-twitter{
+    &:hover,
+    &:focus{
+        @include transition(all 0.5s);
+        background-color: #55acee;
+        color: $brand-secondary;
+    }
+}
+
+.btn-email{
+    &:hover,
+    &:focus{
+        @include transition(all 0.5s);
+        background-color: $brand-accent-1;
+        color: $brand-secondary;
+    }
+}
+
 #social-wrap{
     text-align: center;
     color: $brand-secondary;
     background-color: rgba(15, 22, 38, 0.6);
     padding-top: 5px;
-    padding-bottom: 5px;
+    line-height: 36px;
+        @media (max-width: 768px){
+            padding-bottom: 20px;
+        }
+}
+
+/*******************
+    Modal Styles
+*******************/
+
+.modal-full .modal-dialog{
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
 }

@@ -3800,12 +3800,11 @@ article {
 .fa-search-plus,
 .fa-bar-chart,
 .fa-wordpress,
-.fa-facebook,
+.fa-facebook-official,
 .fa-code,
-.fa-comments,
-.fa-twitter,
-.fa-linkedin {
-  color: #ff533d; }
+.fa-comments {
+  color: #ff533d;
+  display: block; }
 
 .social-link {
   color: #f5f5f5; }
@@ -3865,6 +3864,9 @@ span.uppercase {
     width: 100%;
     display: table-cell;
     vertical-align: bottom; }
+  @media (max-width: 768px) {
+    #hero {
+      background-image: url(../img/banner-bg-mobile.jpg); } }
 
 /*****************
     FAB Styles
@@ -3891,7 +3893,7 @@ span.uppercase {
 ******************/
 #work-mobile {
   background-color: #0f1626;
-  background-image: url(../img/work-bg.jpg);
+  background-image: url(../img/work-bg-mobile.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3905,7 +3907,7 @@ span.uppercase {
 
 #work2-mobile {
   background-color: #f5f5f5;
-  background-image: url(../img/woodwork-bg.jpg);
+  background-image: url(../img/woodwork-bg-mobile.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3916,12 +3918,10 @@ span.uppercase {
     #work2-mobile a:hover, #work2-mobile a:focus {
       border-bottom: none;
       text-decoration: none; }
-  #work2-mobile h2 {
-    color: #0f1626; }
 
 #work3-mobile {
   background-color: #0f1626;
-  background-image: url(../img/lumberjack-bg.jpg);
+  background-image: url(../img/lumberjack-bg-mobile.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4002,11 +4002,66 @@ footer {
   background-color: #0f1626;
   color: #f5f5f5; }
 
+.btn-facebook, .btn-linkedin, .btn-twitter, .btn-email {
+  color: #f5f5f5;
+  background-color: #0f1626;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 22px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .btn-facebook:hover, .btn-facebook:focus, .btn-linkedin:hover, .btn-linkedin:focus, .btn-twitter:hover, .btn-twitter:focus, .btn-email:hover, .btn-email:focus {
+    cursor: pointer; }
+
+.btn-facebook:hover, .btn-facebook:focus {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #3b5998;
+  color: #f5f5f5; }
+
+.btn-linkedin:hover, .btn-linkedin:focus {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #007bb5;
+  color: #f5f5f5; }
+
+.btn-twitter:hover, .btn-twitter:focus {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #55acee;
+  color: #f5f5f5; }
+
+.btn-email:hover, .btn-email:focus {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #ab987a;
+  color: #f5f5f5; }
+
 #social-wrap {
   text-align: center;
   color: #f5f5f5;
   background-color: rgba(15, 22, 38, 0.6);
   padding-top: 5px;
-  padding-bottom: 5px; }
+  line-height: 36px; }
+  @media (max-width: 768px) {
+    #social-wrap {
+      padding-bottom: 20px; } }
+
+/*******************
+    Modal Styles
+*******************/
+.modal-full .modal-dialog {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%; }
 
 /*# sourceMappingURL=app.css.map */
