@@ -33,6 +33,11 @@
     Global Styles
 ********************/
 
+body,
+html{
+    overflow-x: hidden;
+}
+
 body{
     margin-top: 80px;
     background-color: $brand-secondary;
@@ -43,9 +48,64 @@ img{
     overflow: hidden;
 }
 
+a{
+    text-transform: uppercase;
+}
+
+p.lead{
+    font-size: 1.2em;
+}
+
+h1, h2, h3, h4, h5, h6{
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    font-size: 1.5em;
+    color: $brand-accent-1;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+h3{
+}
+
 h1,
 h2{
     font-family: dolce vita light, 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+section,
+article{
+    padding: 120px 0;
+}
+
+.text-wrap{
+    text-align: center;
+    padding: 0 0 70px;
+}
+
+.fa-mobile, 
+.fa-search-plus, 
+.fa-bar-chart, 
+.fa-wordpress, 
+.fa-facebook,
+.fa-code,
+.fa-comments,
+.fa-twitter,
+.fa-linkedin{
+    color: $brand-accent-2;
+    display: block;
+}
+
+.social-link{
+    color: $brand-secondary;
+}
+
+span.uppercase{
+    text-transform: uppercase;
 }
 
 /*****************
@@ -58,7 +118,7 @@ h2{
 
 .navbar-default .navbar-nav > li > a, 
 .navbar-default .navbar-nav > li > a {
-    line-height: 15px; // this is to keep navbar from increasing height on hover due to border-bottom
+    line-height: 17px; // this is to keep navbar from increasing height on hover due to border-bottom
         &:hover,
         &:focus{
             background-color: $brand-trans;
@@ -83,6 +143,7 @@ h2{
 ******************/
 
 #hero{
+    padding: 0;
     background-color: $brand-primary;
     background-image: url(../img/banner-bg-grad.jpg);
     background-position: 50% 50%;
@@ -94,32 +155,12 @@ h2{
     display: table;
     width: 100%;
     color: $brand-secondary;
-}
-
-#hero .wrap{
-    width: 100%;
-    display: table-cell;
-    vertical-align: bottom;
-}
-
-/*
-.fa-circle{
-    color: lighten($brand-accent-2, 7%);
-    position: fixed;
-    right: 2%;
-    bottom: 5%;
-    z-index: 9999;
-    @include text-shadow(0 5px 7px rgba(0, 0, 0, 0.4));
-    @include transition(all 0.5s);
-        &:hover,
-        &:focus{
-            color: $brand-accent-2;
-            cursor: pointer;
-            @include text-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
-            @include transition(all 0.5s);
+        #hero-wrap{
+            width: 100%;
+            display: table-cell;
+            vertical-align: bottom;
         }
 }
-*/
 
 /*****************
     FAB Styles
@@ -138,15 +179,13 @@ h2{
     min-height: 70vh;
     color: $brand-primary;
     text-align: center;
-    position: relative;
-    display: table;
-    width: 100%;
+        h3{
+            color: rgba(15, 22, 38, 0.5);
+        }
 }
 
-#services .wrap{
-    width: 100%;
-    display: table-cell;
-    vertical-align: middle;
+.service-opt{
+    padding-bottom: 50px;
 }
 
 /******************
@@ -160,53 +199,96 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
     color: $brand-secondary;
-}
-
-#work .container-fluid{
-    padding-left: 0;
-}
-
-.description{
-    position: relative;
-    top: 20vh;
-}
-
-.text-wrap{
-    padding: 60px 0 40px;
-    text-align: center;
+        .container-fluid{
+            padding-left: 0;
+        }
+        a{
+            color: $brand-secondary;
+            border-bottom: 1px solid $brand-secondary;
+                &:hover,
+                &:focus{
+                    border-bottom: none;
+                    text-decoration: none;
+                }
+        }
 }
 
 #work2{
-    background-color: $brand-primary;
+    background-color: $brand-secondary;
     background-image: url(../img/woodwork-bg.jpg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     color: $brand-primary;
-}
-
-#work2 .container-fluid{
-    padding-right: 0;
+        .container-fluid{
+            padding-right: 0;
+        }
+        a{
+            color: $brand-primary;
+            border-bottom: 1px solid $brand-primary;
+                &:hover,
+                &:focus{
+                    border-bottom: none;
+                    text-decoration: none;
+                }
+        }
+        h2{
+            color: $brand-primary;
+        }
 }
 
 #work3{
-    padding: 60px 0 0;
     background-color: $brand-primary;
     background-image: url(../img/lumberjack-bg.jpg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     color: $brand-secondary;
+        .container-fluid{
+            padding-left: 0;
+        }
+        a{
+            color: $brand-secondary;
+            border-bottom: 1px solid $brand-secondary;
+                &:hover,
+                &:focus{
+                    border-bottom: none;
+                    text-decoration: none;
+                }
+        }
 }
 
-#work3 .container-fluid{
-    padding-left: 0;
+/***********************
+    Accolades Styles
+***********************/
+
+
+
+/*********************
+    Contact Styles
+*********************/
+
+#contact{
+    background-color: $brand-accent-1;
+    color: $brand-secondary;
+        h2{
+            color: $brand-secondary;
+        }
 }
 
-@media (max-width: 768px) {
-    .description{
-        position: static;
-        padding: 0;
-        margin: 0;
-    }
+/********************
+    Footer Styles
+********************/
+
+footer{
+    background-color: $brand-primary;
+    color: $brand-secondary;
+}
+
+#social-wrap{
+    text-align: center;
+    color: $brand-secondary;
+    background-color: rgba(15, 22, 38, 0.6);
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
