@@ -38,6 +38,7 @@ html{
     overflow-x: hidden;
 }
 
+
 body{
     margin-top: 80px;
     background-color: $brand-secondary;
@@ -84,7 +85,7 @@ article{
 
 .text-wrap{
     text-align: center;
-    padding: 0 0 70px;
+    padding-bottom: 70px;
 }
 
 .fa-mobile, 
@@ -97,7 +98,6 @@ article{
 .fa-twitter,
 .fa-linkedin{
     color: $brand-accent-2;
-    display: block;
 }
 
 .social-link{
@@ -191,6 +191,63 @@ span.uppercase{
 /******************
     Work Styles
 ******************/
+
+#work-mobile{
+    background-color: $brand-primary;
+    background-image: url(../img/work-bg.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $brand-secondary;
+        a{
+            color: $brand-secondary;
+            border-bottom: 1px solid $brand-secondary;
+                &:hover,
+                &:focus{
+                    border-bottom: none;
+                    text-decoration: none;
+                }
+        }
+}
+
+#work2-mobile{
+    background-color: $brand-secondary;
+    background-image: url(../img/woodwork-bg.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $brand-primary;
+        a{
+            color: $brand-primary;
+            border-bottom: 1px solid $brand-primary;
+                &:hover,
+                &:focus{
+                    border-bottom: none;
+                    text-decoration: none;
+                }
+        }
+        h2{
+            color: $brand-primary;
+        }
+}
+
+#work3-mobile{
+    background-color: $brand-primary;
+    background-image: url(../img/lumberjack-bg.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $brand-secondary;
+        a{
+            color: $brand-secondary;
+            border-bottom: 1px solid $brand-secondary;
+                &:hover,
+                &:focus{
+                    border-bottom: none;
+                    text-decoration: none;
+                }
+        }
+}
 
 #work{
     background-color: $brand-primary;
