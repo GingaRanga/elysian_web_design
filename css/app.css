@@ -862,10 +862,10 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #0f1626;
+  color: #ab987a;
   text-decoration: none; }
   a:hover, a:focus {
-    color: black;
+    color: #857254;
     text-decoration: underline; }
   a:focus {
     outline: 5px auto -webkit-focus-ring-color;
@@ -1923,7 +1923,7 @@ legend {
   margin-bottom: 22px;
   font-size: 24px;
   line-height: inherit;
-  color: #333333;
+  color: #ab987a;
   border: 0;
   border-bottom: 1px solid #e5e5e5; }
 
@@ -2615,7 +2615,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
     background-color: #fff; }
 
 .btn-link {
-  color: #0f1626;
+  color: #ab987a;
   font-weight: normal;
   border-radius: 0; }
   .btn-link, .btn-link:active, .btn-link.active, .btn-link[disabled], fieldset[disabled] .btn-link {
@@ -2625,7 +2625,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
   .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
     border-color: transparent; }
   .btn-link:hover, .btn-link:focus {
-    color: black;
+    color: #857254;
     text-decoration: underline;
     background-color: transparent; }
   .btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus {
@@ -2822,7 +2822,7 @@ tbody.collapse.in {
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #eeeeee;
-    border-color: #0f1626; }
+    border-color: #ab987a; }
   .nav .nav-divider {
     height: 1px;
     margin: 10px 0;
@@ -3389,12 +3389,12 @@ a.label:hover, a.label:focus {
   font-size: 24px;
   font-weight: bold;
   line-height: 1;
-  color: #000;
+  color: #f5f5f5;
   text-shadow: 0 1px 0 #fff;
   opacity: 0.2;
   filter: alpha(opacity=20); }
   .close:hover, .close:focus {
-    color: #000;
+    color: #f5f5f5;
     text-decoration: none;
     cursor: pointer;
     opacity: 0.5;
@@ -3473,7 +3473,9 @@ button.close {
 
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5; }
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #0f1626;
+  color: #f5f5f5; }
   .modal-header:before, .modal-header:after {
     content: " ";
     display: table; }
@@ -3494,7 +3496,9 @@ button.close {
 .modal-footer {
   padding: 15px;
   text-align: right;
-  border-top: 1px solid #e5e5e5; }
+  border-top: 1px solid #e5e5e5;
+  background-color: #0f1626;
+  color: #f5f5f5; }
   .modal-footer:before, .modal-footer:after {
     content: " ";
     display: table; }
@@ -3777,16 +3781,20 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0; }
 
+h1,
+h2,
+h3 {
+  font-family: dolce vita light, 'Raleway', sans-serif;
+  text-transform: uppercase; }
+
 h2 {
   font-size: 1.5em;
   color: #ab987a;
   font-weight: bolder;
   letter-spacing: 1px; }
 
-h1,
-h2 {
-  font-family: dolce vita light, 'Raleway', sans-serif;
-  text-transform: uppercase; }
+h3 {
+  color: #ab987a; }
 
 section,
 article {
@@ -3899,7 +3907,7 @@ span.uppercase {
   background-size: cover;
   color: #f5f5f5; }
   #work-mobile a {
-    color: #f5f5f5;
+    color: #ab987a;
     border-bottom: 1px solid #f5f5f5; }
     #work-mobile a:hover, #work-mobile a:focus {
       border-bottom: none;
@@ -3913,11 +3921,13 @@ span.uppercase {
   background-size: cover;
   color: #0f1626; }
   #work2-mobile a {
-    color: #0f1626;
+    color: #ab987a;
     border-bottom: 1px solid #0f1626; }
     #work2-mobile a:hover, #work2-mobile a:focus {
       border-bottom: none;
       text-decoration: none; }
+  #work2-mobile h3 {
+    color: #ab987a; }
 
 #work3-mobile {
   background-color: #0f1626;
@@ -3927,7 +3937,7 @@ span.uppercase {
   background-size: cover;
   color: #f5f5f5; }
   #work3-mobile a {
-    color: #f5f5f5;
+    color: #ab987a;
     border-bottom: 1px solid #f5f5f5; }
     #work3-mobile a:hover, #work3-mobile a:focus {
       border-bottom: none;
@@ -3943,7 +3953,7 @@ span.uppercase {
   #work .container-fluid {
     padding-left: 0; }
   #work a {
-    color: #f5f5f5;
+    color: #ab987a;
     border-bottom: 1px solid #f5f5f5; }
     #work a:hover, #work a:focus {
       border-bottom: none;
@@ -3959,13 +3969,13 @@ span.uppercase {
   #work2 .container-fluid {
     padding-right: 0; }
   #work2 a {
-    color: #0f1626;
+    color: #ab987a;
     border-bottom: 1px solid #0f1626; }
     #work2 a:hover, #work2 a:focus {
       border-bottom: none;
       text-decoration: none; }
-  #work2 h2 {
-    color: #0f1626; }
+  #work2 h3 {
+    color: #ab987a; }
 
 #work3 {
   background-color: #0f1626;
@@ -3977,11 +3987,15 @@ span.uppercase {
   #work3 .container-fluid {
     padding-left: 0; }
   #work3 a {
-    color: #f5f5f5;
+    color: #ab987a;
     border-bottom: 1px solid #f5f5f5; }
     #work3 a:hover, #work3 a:focus {
       border-bottom: none;
       text-decoration: none; }
+
+.description {
+  padding-top: 7%;
+  padding-bottom: 7%; }
 
 /***********************
     Accolades Styles

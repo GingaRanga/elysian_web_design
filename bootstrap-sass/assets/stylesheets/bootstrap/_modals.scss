@@ -80,6 +80,8 @@
   padding: $modal-title-padding;
   border-bottom: 1px solid $modal-header-border-color;
   @include clearfix;
+  background-color: $brand-primary; // added by me
+  color: $brand-secondary; // added by me
 }
 // Close icon
 .modal-header .close {
@@ -105,6 +107,8 @@
   text-align: right; // right align buttons
   border-top: 1px solid $modal-footer-border-color;
   @include clearfix; // clear it in case folks use .pull-* classes on buttons
+  background-color: $brand-primary; // added by me
+  color: $brand-secondary; // added by me
 
   // Properly space out buttons
   .btn + .btn {

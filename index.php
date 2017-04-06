@@ -185,22 +185,18 @@
             <article id="work-mobile">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 visible-xs text-center">
+                        <div class="col-xs-12 text-center">
                             <h2>Current Work</h2>
-                            <p class="lead">Sleek and modern design with a business work&#45;horse under the hood&#46;</p>
+                            <p class="lead">Sleek and modern design on the outside&#44; but all business under the hood&#46;</p>
                             <hr>
-                        </div><!-- /.text-wrap -->
-                        <div class="text-wrap hidden-xs">
-                            <h2>Current Work</h2>
-                            <p class="lead">Sleek and modern design with a business work&#45;horse under the hood&#46;</p>
                         </div><!-- /.text-wrap -->
                     </div><!-- /.row -->
                     <div class="row">
                         <div class="col-xs-12 col-sm-7">
                             <img class="img-responsive" src="img/mobile-blog.png" alt="blog site on different screens">
                         </div><!-- /.col-md-7 -->
-                        <div class="col-xs-12 col-sm-5 description">
-                            <h2>Google AMP Blog Website</h2> 
+                        <div class="col-xs-12 col-sm-5">
+                            <h3>Google AMP Blog Website</h3> 
                             <p>A personal blog page which has achieved upwards of 2000 viewers per post and utilizes Google&#39;s Accelerated Mobile Pages principles&#46;</p>
                             <a class="work-link" href="http://www.gigglesnshit.com/">Explore the site</a>
                         </div><!-- /.col-md-5 -->
@@ -213,8 +209,8 @@
                         <div class="col-xs-12 col-sm-7 visible-xs">
                             <img class="img-responsive" src="img/mobile-gunclub.png" alt="gun club site on different screens">
                         </div><!-- /.col-md-7 -->
-                        <div class="col-xs-12 col-sm-5 description">
-                            <h2>Single Page Gun Club Website</h2> 
+                        <div class="col-xs-12 col-sm-5">
+                            <h3>Single Page Gun Club Website</h3> 
                             <p>A single page gun club website which helped increase club membership to its highest in the first year of site launch&#46;</p>
                             <a class="work-link" href="http://www.defaga.com/">Explore the site</a>
                         </div><!-- /.col-md-5 -->
@@ -230,9 +226,9 @@
                         <div class="col-xs-12 col-sm-7">
                             <img class="img-responsive" src="img/mobile-wedding.png" alt="wedding site on different screens">
                         </div><!-- /.col-md-7 -->
-                        <div class="col-xs-12 col-sm-5 description">
-                            <h2>Dynamic Wedding Website</h2> 
-                            <p>A dynamic wedding website which made it easy for the couple&#39;s families to access all of the information they needed whilst having an easy to use user interface &#40;UI&#41;&#46;</p>
+                        <div class="col-xs-12 col-sm-5">
+                            <h3>Dynamic Wedding Website</h3> 
+                            <p>The clients wanted to create something unique and special for their wedding website, which they felt could not be obtained by using the cheaper template site builders available. They wanted to create a user experience, which would be seamless for the wide variety of guests using the site. The wedding colours needed to be integrated throughout the whole design and the important info needed to be clearly presented. The money saved on creating custom invitations and updates was utilized to create a more functional presentation via their website. All of the above was accomplished whilst working with the clients from start to finish.</p>
                             <a class="work-link" href="http://www.soontobesobey.com/">Explore the site</a>
                         </div><!-- /.col-md-5 -->
                     </div><!-- /.row -->
@@ -246,15 +242,15 @@
                     <div class="row">
                         <div class="text-wrap col-sm-6 col-sm-offset-3">
                             <h2>Current Work</h2>
-                            <p class="lead">Sleek and modern design with a business work&#45;horse under the hood&#46;</p>
+                            <p class="lead">Sleek and modern design on the outside&#44; but all business under the hood&#46;</p>
                         </div><!-- /.text-wrap -->
                     </div><!-- /.row -->
                     <div class="row">
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/responsive-blog.png" alt="blog site on different screens">
+                            <img width="70%" class="img-responsive" src="img/responsive-blog.png" alt="blog site on different screens">
                         </div><!-- /.col-md-7 -->
                         <div class="col-sm-5 description">
-                            <h2>Google AMP Blog Website</h2> 
+                            <h3>Google AMP Blog Website</h3> 
                             <p>A personal blog page which has achieved upwards of 2000 viewers per post and utilizes Google&#39;s Accelerated Mobile Pages principles&#46;</p>
                             <a class="work-link" href="http://www.gigglesnshit.com/">Explore the site</a>
                         </div><!-- /.col-md-5 -->
@@ -268,12 +264,12 @@
                             <img class="img-responsive" src="img/responsive-gunclub.png" alt="gun club site on different screens">
                         </div><!-- /.col-md-7 -->
                         <div class="col-sm-5 description">
-                            <h2>Single Page Gun Club Website</h2> 
+                            <h3>Single Page Gun Club Website</h3> 
                             <p>A single page gun club website which helped increase club membership to its highest in the first year of site launch&#46;</p>
                             <a class="work-link" href="http://www.defaga.com/">Explore the site</a>
                         </div><!-- /.col-md-5 -->
                         <div class="col-sm-7 hidden-xs">
-                            <img class="img-responsive" src="img/responsive-gunclub.png" alt="gun club site on different screens">
+                            <img class="img-responsive right-block" src="img/responsive-gunclub.png" alt="gun club site on different screens">
                         </div><!-- /.col-md-7 -->
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
@@ -282,11 +278,11 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/responsive-wedding.png" alt="wedding site on different screens">
+                            <img width="70%" class="img-responsive" src="img/responsive-wedding.png" alt="wedding site on different screens">
                         </div><!-- /.col-md-7 -->
                         <div class="col-sm-5 description">
-                            <h2>Dynamic Wedding Website</h2> 
-                            <p>A dynamic wedding website which made it easy for the couple&#39;s families to access all of the information they needed whilst having an easy to use user interface &#40;UI&#41;&#46;</p>
+                            <h3>Dynamic Wedding Website</h3> 
+                            <p>The clients wanted to create something unique and special for their wedding website, which they felt could not be obtained by using the cheaper template site builders available. They wanted to create a user experience, which would be seamless for the wide variety of guests using the site. The wedding colours needed to be integrated throughout the whole design and the important info needed to be clearly presented. The money saved on creating custom invitations and updates was utilized to create a more functional presentation via their website. All of the above was accomplished whilst working with the clients from start to finish.</p>
                             <a class="work-link" href="http://www.soontobesobey.com/">Explore the site</a>
                         </div><!-- /.col-md-5 -->
                     </div><!-- /.row -->
@@ -450,9 +446,10 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i> Request for Proposal</h4>
+                        <hr>
+                        <p>In order for Elysian to determine if we can provide you with the best solution&#44; please fill out as much detail as you can. If you have a general inquiry please email me at&#58; <a href="mailto:webdesignelysian@gmail.com?Subject=&#91;%20Company%20Name%20&#93;%20Has%20a%20message%20for%20Elysian%20Web%20Design&#33;&body=Please%20enter%20company%20name%20in%20email%20subject%20as%20well%20as%20your%20contact%20details%20and%20we%20will%20get%20back%20to%20you%20as%20soon%20as%20we%20can%20&#58;&#41;" target="_top">webdesignelysian@gmail.com</a></p>
                     </div><!-- /.modal-header -->
                     <div class="modal-body">
-                        <p>In order for Elysian to determine if we can provide you with the best solution&#44; please fill out as much detail as you can. If you have a general inquiry please email me at&#58; <a href="mailto:webdesignelysian@gmail.com?Subject=&#91;%20Company%20Name%20&#93;%20Has%20a%20message%20for%20Elysian%20Web%20Design&#33;&body=Please%20enter%20company%20name%20in%20email%20subject%20as%20well%20as%20your%20contact%20details%20and%20we%20will%20get%20back%20to%20you%20as%20soon%20as%20we%20can%20&#58;&#41;" target="_top">webdesignelysian@gmail.com</a></p>
                         <form>
                             <fieldset>
                                 <legend>Company / Personal Info</legend>
@@ -559,13 +556,13 @@
                                     <label for="formRef">How did you hear about Elysian&#63;</label>
                                     <textarea class="form-control" id="formRef" rows="3" placeholder="Please state how you heard about Elysian Web Design, be it: Google search, friend referral, etc..."></textarea>
                                 </div><!-- /.form-group -->
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div><!-- /.modal-footer -->
                             </fieldset>
                         </form>
                     </div><!-- /.modal-body -->
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div><!-- /.modal-footer -->
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
