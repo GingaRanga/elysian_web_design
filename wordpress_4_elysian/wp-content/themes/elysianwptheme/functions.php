@@ -44,7 +44,8 @@ function elysianwptheme_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Primary', 'elysianwptheme' ),
+		'primary' => esc_html__( 'Primary', 'elysianwptheme' ),
+        'footer' => esc_html__( 'Footer', 'elysianwptheme' ),
 	) );
 
 	/*

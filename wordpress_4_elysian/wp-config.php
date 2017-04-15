@@ -23,10 +23,10 @@
 define('DB_NAME', 'elysianwordpress');
 
 /** MySQL database username */
-define('DB_USER', 'bootman');
+define('DB_USER', 'elysianuser');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'ceGWygcKdqF65G71');
+define('DB_PASSWORD', '8O8P2gGLSoJgLU7U');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'Ks4*@S5/&O0w>{I|M_nn+%8u;7A3$/RT?VE>IvP<FUdEo(*#HQh5`Qf?Wwby]9ls');
-define('SECURE_AUTH_KEY',  'Os_d- qIq5O9;km`#:$IJUq7O;ZezjdUGi5FDT0RS*NLd1vM}-n|!vY5be}<4(ht');
-define('LOGGED_IN_KEY',    'VK_<P%ZXveug5&4qz[vT!waTg:bx#_ Y-l*slHY-0N++lw{yj:P-EaeGZ09+{<ZK');
-define('NONCE_KEY',        '*Is3!apZx}m0</~h&a{5mN(L .>>4UJ#uERlX(&-Q0|iud{|F3/>!@@7HZae6A_0');
-define('AUTH_SALT',        'A ?,j3loX-q-?~D8RY!74R&:VS]r>^Y4SLtuTA}-DD`I|cX:|uPy#vxyi]g}/ZFH');
-define('SECURE_AUTH_SALT', 'UN?DIA7!aFl6D}]x}qvR=u)(sy{^ypR^y8<7l:U=V$2sJ|H`k|f7;:*<&QmC[7Gl');
-define('LOGGED_IN_SALT',   '%|,H-@ 8WA!U$3c}?=0[D.Q]#z4}A65U-H<IuNL@f?s~Hxw[i+;]A)Z`,gM>M=< ');
-define('NONCE_SALT',       '+|`+s-?{,fu4}A-zA#TDP!|.Go7w9,8# %OI|f9XN.+FAu,e<(6.7@)C59|uua[U');
+define('AUTH_KEY',         'ph?[6;0&Bj&-nh8LmiM(O%r6>C?2]hK~] /-FH0!8|`4fpF@[3#+/y|?Uc|;3OXa');
+define('SECURE_AUTH_KEY',  '!_5=E8NB$<9p;9*-Att01A*0z:Ocs~)(14wK;Lw6&@?qpQzwinnN!n2%<.[=.Ah6');
+define('LOGGED_IN_KEY',    '*J+.?nlI<}T=LW]x-H/:V~;umsk@a.|^q&]RP$7]RNo]v$[feDRQ%cGI<-N)zlAq');
+define('NONCE_KEY',        'QC0fh4Ac.mw%YP#2G9VvJ,+c!Yaf@}^{05F.4AYqg&q{$pg+hJZMUv%$duY*Bf!q');
+define('AUTH_SALT',        '&{S%,/I4$CS;PnRv.uqH0Ac,|o5tS|j@Z`!<p)1mo>+:)xv:]$_sNp~m-2(hXLbM');
+define('SECURE_AUTH_SALT', 'j615G!S5|+0-IF8)mD(%$)G+wrN(,l:=e0m>5s*4ZFZ--@4aHh[KWg[6eC+H`yZW');
+define('LOGGED_IN_SALT',   '-aAEY]zsH8<wBBNsglJDa5&9I|%{}lqEc6zh|tfkId4LO(C4kN#l`` 0gs,c3wq|');
+define('NONCE_SALT',       'N74zC6z&WQQNUT{vR,jf;aQn(7K%g(]vTiM-R|V,8<0+[k>_$fw%U4L&MG]|7plU');
 
 /**#@-*/
 
@@ -62,9 +62,8 @@ define('NONCE_SALT',       '+|`+s-?{,fu4}A-zA#TDP!|.Go7w9,8# %OI|f9XN.+FAu,e<(6.
  *
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
- * CHANGE FROM WP_ TO PREVENT HACKING
  */
-// $table_prefix  = 'wp_';
+//$table_prefix  = 'wp_';
 $table_prefix  = 'ewd_';
 
 /**

@@ -42,25 +42,25 @@
         <![endif]-->
     </head>
 
-    <body <?php body_class(); ?>>
+    <body <?php body_class(); ?> id="page-top">
         <div id="page" class="site">
 	        <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'elysianwptheme' ); ?></a>
 
-        <!-- NAV ============================================================================================================================ -->
+<!-- NAV ================================================================================================================================================================== -->
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bar-collapse" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bar-collapse" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand hidden-xs" href="/">
+                    <a class="navbar-brand hidden-xs" href="#page-top">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/banner-logo-2.svg" width="200" height="70" alt="Elysian Web Design Logo">
                     </a>
-                    <a class="navbar-brand visible-xs" href="/">
+                    <a class="navbar-brand visible-xs" href="#page-top">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo-blk.svg" width="70" height="70" alt="Elysian Web Design Logo">
                     </a>
                 </div><!-- /.navbar-header -->
@@ -73,7 +73,7 @@
                         // html5 tag for nav
                         'container'         => 'nav', 
                         // class of container
-                        'container_class'   => 'navbar-collapse collapse',
+                        'container_class'   => 'navbar-collapse collapse bar-collapse',
                         // menu class
                         'menu_class'        => 'nav navbar-nav navbar-right'
                         /* now need to set the menu in the wp dashboard */
@@ -81,4 +81,4 @@
                 ?>
                 
             </div><!-- /.container-fluid -->
-        </nav>
+        </nav><!-- /.navbar navbar-default navbar-fixed-top -->

@@ -1,0 +1,59 @@
+<fieldset>
+    <legend>Company / Personal Info</legend>
+    <div class="form-group form-group-lg">
+        <label for="formName">Full name</label>
+        [text* your-name class:form-control id:formName placeholder "Jane Doe"]
+    </div>
+    <div class="form-group form-group-lg">
+        <label for="formCompany">Company name</label>
+        [text your-company class:form-control id:formCompany placeholder "Jane Doe Ltd"]
+    </div>
+    <div class="form-group form-group-lg">
+        <label for="formTitle">Your position</label>
+        [text your-position class:form-control id:formTitle placeholder "CTO, manager, president, etc."]
+    </div>
+    <div class="form-group form-group-lg">
+        <label for="formEmail">Email address</label>
+        [email* your-email class:form-control id:formEmail placeholder "email@example.com"]
+    </div>
+    <div class="form-group form-group-lg">
+        <label for="formPhone">Phone number</label>
+        [tel* your-tel class:form-control id:formPhone placeholder "XXX-XXX-XXXX"]
+    </div>
+    <div class="form-group form-group-lg">
+        <label for="formURL">Website</label>
+        [url your-url class:form-control id:formURL placeholder "www.example.com"]
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Project Info</legend>
+    <div class="form-group form-group-lg">
+        <label for="formScope">Project scope</label>
+        <div class="checkbox">
+            [checkbox your-project "Full website build" "Website revision" "Consultation" "WordPress website"]
+        </div>
+    </div>
+    <div class="form-group form-group-lg">
+        <label for="formAddons">&Aacute; la Carte Services</label>
+        <div class="checkbox">
+            [checkbox your-addons "Responsive website" "Pagespeed optimization" "Search engine optimization" "Analytics &amp; competitive analysis" "Social media marketing"]
+        </div>
+        <label for="formOther">Other</label>
+        [textarea your-other class:form-control id:formOther x3 placeholder "Please state anything specific you would like to request for your webpage..."]
+    </div>
+    <div class="form-group form-group-lg">
+        <label for="formBudget">Your budget</label>
+        [select* your-budget class:form-control id:formBudget "<$1K" "$1K - $2K" "$2K - $3K" "$3K - $4K" ">$4K" "not specified"]
+    </div>
+    <div class="form-group form-group-lg">
+        <label for="formText">Project specifics</label>
+        [textarea* your-text class:form-control id:formText x3 placeholder "Please state specific to your project, such as: timeline, goal of the project, do you want to manage future updates or not, a bit about your company..."]
+    </div>
+    <div class="form-group form-group-lg">
+        <label for="formRef">How did you hear about Elysian&#63;</label>
+        [textarea* your-ref class:form-control id:formRef x3 placeholder "Please state how you heard about Elysian Web Design, be it: Google search, friend referral, etc..."]
+    </div>
+</fieldset>
+<div>
+    [submit class:btn class:btn-primary class:btn-lg "Submit"]
+</div>

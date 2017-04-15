@@ -407,7 +407,9 @@ h2 {
   letter-spacing: 1px; }
 
 h3 {
-  color: #ab987a; }
+  color: #ab987a; 
+  padding: 20px 0 10px;
+}
 
 section,
 article {
@@ -471,7 +473,7 @@ span.uppercase {
 #hero {
   padding: 0;
   background-color: #0f1626;
-  background-image: url('/wp-content/themes/elysianwptheme/assets/img/banner-bg-grad.jpg');
+  background-image: url(assets/img/banner-bg-grad.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -487,7 +489,7 @@ span.uppercase {
     vertical-align: bottom; }
   @media (max-width: 768px) {
     #hero {
-      background-image: url(/wp-content/themes/elysianwptheme/assets/img/banner-bg-mobile.jpg); } }
+      background-image: url(assets/img/banner-bg-mobile.jpg); } }
 
 /*****************
     FAB Styles
@@ -514,7 +516,7 @@ span.uppercase {
 ******************/
 #work-mobile {
   background-color: #0f1626;
-  background-image: url(/wp-content/themes/elysianwptheme/assets/img/work-bg-mobile.jpg);
+  background-image: url(assets/img/work-bg-mobile.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -528,7 +530,7 @@ span.uppercase {
 
 #work2-mobile {
   background-color: #f5f5f5;
-  background-image: url(/wp-content/themes/elysianwptheme/assets/img/woodwork-bg-mobile.jpg);
+  background-image: url(assets/img/woodwork-bg-mobile.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -544,7 +546,7 @@ span.uppercase {
 
 #work3-mobile {
   background-color: #0f1626;
-  background-image: url(/wp-content/themes/elysianwptheme/assets/img/lumberjack-bg-mobile.jpg);
+  background-image: url(assets/img/lumberjack-bg-mobile.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -558,7 +560,7 @@ span.uppercase {
 
 #work {
   background-color: #0f1626;
-  background-image: url(/wp-content/themes/elysianwptheme/assets/img/work-bg.jpg);
+  background-image: url(assets/img/work-bg.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -574,7 +576,7 @@ span.uppercase {
 
 #work2 {
   background-color: #f5f5f5;
-  background-image: url(/wp-content/themes/elysianwptheme/assets/img/woodwork-bg.jpg);
+  background-image: url(assets/img/woodwork-bg.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -592,7 +594,7 @@ span.uppercase {
 
 #work3 {
   background-color: #0f1626;
-  background-image: url(/wp-content/themes/elysianwptheme/assets/img/lumberjack-bg.jpg);
+  background-image: url(assets/img/lumberjack-bg.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -686,7 +688,6 @@ footer {
     Modal Styles
 *******************/
 .modal-full .modal-dialog {
-  margin: 0;
   margin-right: auto;
   margin-left: auto;
   width: 100%; }
@@ -696,4 +697,9 @@ footer {
     .logged-in .navbar-fixed-top{
         top: 46px;
     }
+    .modal{
+        top: 46px;
+    }
 }
+
+span.wpcf7-list-item { display: block; }

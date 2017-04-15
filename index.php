@@ -89,7 +89,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-5">
-                            <h1 style="margin-bottom:0;">Elysian Web Design</h1>
+                            <h1>Elysian Web Design</h1>
                             <small class="text-muted">by Evan Marshall</small>
                             <p class="lead">Based in the humble Annapolis valley&#44; Elysian adds a personal touch to your website design&#44; which puts it a step above the rest</p>
                             <!-- <a href="#"><i class="fa fa-4x fa-circle" aria-hidden="true"></i></a> -->
@@ -228,7 +228,7 @@
                         </div><!-- /.col-md-7 -->
                         <div class="col-xs-12 col-sm-5">
                             <h3>Dynamic Wedding Website</h3> 
-                            <p>The clients wanted to create something unique and special for their wedding website, which they felt could not be obtained by using the cheaper template site builders available. They wanted to create a user experience, which would be seamless for the wide variety of guests using the site. The wedding colours needed to be integrated throughout the whole design and the important info needed to be clearly presented. The money saved on creating custom invitations and updates was utilized to create a more functional presentation via their website. All of the above was accomplished whilst working with the clients from start to finish.</p>
+                            <p>The clients wanted to create something unique and special for their wedding website, which they felt could not be obtained by using the cheaper template site builders available. They wanted to create a user experience, which would be seamless for the wide variety of guests using the site. The wedding colours needed to be integrated throughout the whole design and the important info needed to be clearly presented. The money they saved by not having to create custom invitations and updates was utilized to create a more functional presentation of info via their website. All of the above was accomplished whilst working closely with the clients from start to finish.</p>
                             <a class="work-link" href="http://www.soontobesobey.com/">Explore the site</a>
                         </div><!-- /.col-md-5 -->
                     </div><!-- /.row -->
@@ -282,7 +282,7 @@
                         </div><!-- /.col-md-7 -->
                         <div class="col-sm-5 description">
                             <h3>Dynamic Wedding Website</h3> 
-                            <p>The clients wanted to create something unique and special for their wedding website, which they felt could not be obtained by using the cheaper template site builders available. They wanted to create a user experience, which would be seamless for the wide variety of guests using the site. The wedding colours needed to be integrated throughout the whole design and the important info needed to be clearly presented. The money saved on creating custom invitations and updates was utilized to create a more functional presentation via their website. All of the above was accomplished whilst working with the clients from start to finish.</p>
+                            <p>The clients wanted to create something unique and special for their wedding website, which they felt could not be obtained by using the cheaper template site builders available. They wanted to create a user experience, which would be seamless for the wide variety of guests using the site. The wedding colours needed to be integrated throughout the whole design and the important info needed to be clearly presented. The money they saved by not having to create custom invitations and updates was utilized to create a more functional presentation of info via their website. All of the above was accomplished whilst working closely with the clients from start to finish.</p>
                             <a class="work-link" href="http://www.soontobesobey.com/">Explore the site</a>
                         </div><!-- /.col-md-5 -->
                     </div><!-- /.row -->
